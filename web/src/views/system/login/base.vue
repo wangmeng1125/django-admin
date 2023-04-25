@@ -60,7 +60,8 @@ export default {
   },
   computed: {
     ...mapState('d2admin', {
-      siteLogo: state => state.settings.data['login.site_logo'] || require('./image/dvadmin.png'), // 网站logo地址
+      siteLogo: state => state.settings.data['login.site_logo'], // 网站logo地址
+      // siteLogo: state => state.settings.data['login.site_logo'] || require('./image/dvadmin.png'), // 网站logo地址
       keepRecord: state => state.settings.data['login.keep_record'],
       siteName: state => state.settings.data['login.site_name'], // 网站名称
       copyright: state => state.settings.data['login.copyright'],
