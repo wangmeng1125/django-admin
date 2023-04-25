@@ -5,7 +5,7 @@ import d2ContainerGhost from './components/d2-container-ghost.vue'
 import d2ContainerGhostBs from './components/d2-container-ghost-bs.vue'
 import d2ContainerCard from './components/d2-container-card.vue'
 import d2ContainerCardBs from './components/d2-container-card-bs.vue'
-import d2Source from './components/d2-source.vue'
+// import d2Source from './components/d2-source.vue'
 
 export default {
   name: 'd2-container',

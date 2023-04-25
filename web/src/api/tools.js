@@ -1,11 +1,3 @@
-/*
- * @创建文件时间: 2021-06-01 22:41:19
- * @Auther: 猿小天
- * @最后修改人: 猿小天
- * @最后修改时间: 2021-08-01 02:35:45
- * 联系Qq:1638245306
- * @文件介绍:
- */
 import { Message } from 'element-ui'
 import store from '@/store'
 import util from '@/libs/util'

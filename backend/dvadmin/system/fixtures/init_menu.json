@@ -660,7 +660,7 @@
         "menu_button": []
     },
     {
-        "name": "DVAdmin官网",
+        "name": "DVAdmin",
         "icon": "external-link",
         "sort": 4,
         "is_link": true,

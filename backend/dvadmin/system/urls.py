@@ -30,14 +30,18 @@ system_url.register(r'system_config', SystemConfigViewSet)
 system_url.register(r'message_center',MessageCenterViewSet)
 
 urlpatterns = [
+    # 登录
+    path('login_log/', LoginLogViewSet.as_view({'get': 'list'})),
+    path('login_log/<int:pk>/', LoginLogViewSet.as_view({'get': 'retrieve'})),
+    # 用户
     path('user/export/', UserViewSet.as_view({'post': 'export_data', })),
     path('user/import/', UserViewSet.as_view({'get': 'import_data', 'post': 'import_data'})),
+    # 系统
     path('system_config/save_content/', SystemConfigViewSet.as_view({'put': 'save_content'})),
     path('system_config/get_association_table/', SystemConfigViewSet.as_view({'get': 'get_association_table'})),
     path('system_config/get_table_data/<int:pk>/', SystemConfigViewSet.as_view({'get': 'get_table_data'})),
     path('system_config/get_relation_info/', SystemConfigViewSet.as_view({'get': 'get_relation_info'})),
-    path('login_log/', LoginLogViewSet.as_view({'get': 'list'})),
-    path('login_log/<int:pk>/', LoginLogViewSet.as_view({'get': 'retrieve'})),
+    # 部门
     path('dept_lazy_tree/', DeptViewSet.as_view({'get': 'dept_lazy_tree'})),
 ]
 urlpatterns += system_url.urls

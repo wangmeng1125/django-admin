@@ -52,13 +52,34 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django_comment_migrate",
     "rest_framework",
+    # 'rest_framework_swagger', # 或 'drf_yasg'
     "django_filters",
     "corsheaders",  # 注册跨域app
     "dvadmin.system",
     "drf_yasg",
     "captcha",
     'channels',
+    "crud_demo",
+    "data_visual",
+    "data_target"
 ]
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'root': {
+        'handlers': ['console'],
+        'level': 'DEBUG',
+    },
+}
+
+
+
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -66,7 +87,7 @@ MIDDLEWARE = [
     "django.contrib.sessions.middleware.SessionMiddleware",
     "corsheaders.middleware.CorsMiddleware",  # 跨域中间件
     "django.middleware.common.CommonMiddleware",
-    "django.middleware.csrf.CsrfViewMiddleware",
+    # "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
@@ -305,9 +326,9 @@ AUTHENTICATION_BACKENDS = ["dvadmin.utils.backends.CustomBackend"]
 from datetime import timedelta
 
 SIMPLE_JWT = {
-    # token有效时长
+    # token有效时长 120分钟
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=120),
-    # token刷新后的有效时间
+    # token刷新后的有效时间 1天
     "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
     # 设置前缀
     "AUTH_HEADER_TYPES": ("JWT",),

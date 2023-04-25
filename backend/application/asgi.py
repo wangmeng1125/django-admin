@@ -1,10 +1,10 @@
 """
 ASGI config for application project.
-
 It exposes the ASGI callable as a module-level variable named ``application``.
-
 For more information on this file, see
 https://docs.djangoproject.com/en/3.2/howto/deployment/asgi/
+
+这是一个ASGI应用程序的配置文件，其中包含了ASGI应用程序的路由配置和中间件堆栈配置。
 """
 
 import os

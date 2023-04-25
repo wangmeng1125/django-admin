@@ -55,5 +55,22 @@
     "password": "pbkdf2_sha256$260000$g17x5wlSiW1FZAh1Eudchw$ZeSAqj3Xak0io8v/pmPW0BX9EX5R2zFXDwbbD68oBFk=",
     "last_login": null,
     "is_superuser": false
+  },
+  {
+    "任务": "Semantic Segmentation 语义分割",
+    "model1": "InternImage-DCNv3-H",
+    "datasetxxx":"ADE20K",
+
+    "view1":"ADE20K",
+    "2":"ADE20K",
+    "3":"ADE20K",
+    "4":"ADE20K"
+
+  },
+  {
+    "4":"ADE20K",
+    "4":"ADE20K",
+    "4":"ADE20K",
+    "4":"ADE20K"
   }
 ]

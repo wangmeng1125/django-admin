@@ -18,21 +18,26 @@ from dvadmin.utils.serializers import CustomModelSerializer
 send_dict = {}
 
 
-# 发送消息结构体
+'''
+【 发送消息结构体 】
+'''
 def set_message(sender, msg_type, msg, unread=0):
     text = {
-        'sender': sender,
-        'contentType': msg_type,
-        'content': msg,
-        'unread': unread
+        'sender': sender,           # 消息发送者
+        'contentType': msg_type,    # 消息类型
+        'content': msg,             # 消息内容
+        'unread': unread            # 是否已读
     }
     return text
 
 
-# 异步获取消息中心的目标用户
-@database_sync_to_async
+'''
+【 异步获取消息中心的目标用户 】
+'''
+@database_sync_to_async # 函数异步化
 def _get_message_center_instance(message_id):
     from dvadmin.system.models import MessageCenter
+    # 过滤出 id 等于 message_id 的记录 如果存在 则返回包含target_user的列表
     _MessageCenter = MessageCenter.objects.filter(id=message_id).values_list('target_user', flat=True)
     if _MessageCenter:
         return _MessageCenter

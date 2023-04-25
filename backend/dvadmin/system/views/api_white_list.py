@@ -1,11 +1,4 @@
 # -*- coding: utf-8 -*-
-
-"""
-@author: 猿小天
-@contact: QQ:1638245306
-@Created on: 2022/1/1 001 9:34
-@Remark:
-"""
 from dvadmin.system.models import ApiWhiteList
 from dvadmin.utils.serializers import CustomModelSerializer
 from dvadmin.utils.viewset import CustomModelViewSet
