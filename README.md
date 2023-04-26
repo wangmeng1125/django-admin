@@ -137,7 +137,7 @@ docker-compose up -d --build
 
 ## 演示图✅
 
-![登录界面](./演示图片/1登录界面.png)
+![01-登录界面](演示图片/1登录界面.png)
 
 ![image-01](https://images.gitee.com/uploads/images/2022/0530/234137_b58c8f98_5074988.png)
 
