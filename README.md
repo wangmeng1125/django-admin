@@ -139,7 +139,7 @@ docker-compose up -d --build
 
 ![01-登录界面](演示图片/1登录界面.png)
 
-![image-01](https://images.gitee.com/uploads/images/2022/0530/234137_b58c8f98_5074988.png)
+![image-01]([https://images.gitee.com/uploads/images/2022/0530/234137_b58c8f98_5074988.png](https://github.com/wangmeng1125/django-admin/blob/master/%E6%BC%94%E7%A4%BA%E5%9B%BE%E7%89%87/%E6%BC%94%E7%A4%BA%E5%9B%BE%E7%89%87/1%E7%99%BB%E5%BD%95%E7%95%8C%E9%9D%A2.png?raw=true))
 
 ![image-02](https://images.gitee.com/uploads/images/2022/0530/234240_39834603_5074988.png)
 
