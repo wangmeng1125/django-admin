@@ -10,13 +10,6 @@
 * 支持加载动态权限菜单，多方式轻松权限控制。
 
 
-## 源码地址
-
-gitee地址(主推)：[https://gitee.com/liqianglog/django-vue-admin](https://gitee.com/liqianglog/django-vue-admin)👩‍👦‍👦
-
-github地址：[https://github.com/liqianglog/django-vue-admin](https://github.com/liqianglog/django-vue-admin)👩‍👦‍👦
-
-
 ## 内置功能
 
 1.  菜单管理：配置系统菜单，操作权限，按钮权限标识、后端接口权限等。
